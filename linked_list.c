@@ -20,10 +20,9 @@ struct linked_list insert_word_linkedlist(struct linked_list list, char* word) {
 	  return list;
         }
 
-	w.count = 1;
 	w.len = strlen(word);
-	w.text = (char*)malloc(sizeof(char)*(strlen(word)+1));
-	strcpy(w.text, word);
+        w.text = strdup(word);
+	w.count = 1;
 
 	node->theword = w;
 	node->next = NULL;
@@ -89,7 +88,7 @@ struct linked_list delete_word_linkedlist(struct linked_list list, char *word){
 	  list.head = list.head->next;
 	  free(tmp->theword.text);
 	  free(tmp);
-	  list.word_count -= 1;
+	  list.word_count--;
 	  return list;
 	}
 
@@ -105,7 +104,8 @@ struct linked_list delete_word_linkedlist(struct linked_list list, char *word){
 	  return list;
 	}
 
-	list.word_count -= 1;
+	list.word_count--;
+
 	prev->next = cur->next;
 	free(cur->theword.text);
 	free(cur);
