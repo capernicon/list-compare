@@ -1,6 +1,6 @@
 <h1>list compare</h1>
 
-![Screenshot of list compare menu](https://github.com/capernicon/list-compare/blob/master/list.PNG "List compare")
+![Screenshot of list compare menu](https://github.com/capernicon/list-compare/blob/master/list_comp.PNG "List compare")
 
 <p>
   A program I created which works with two of the most common data structures in C; the linkedlist and arraylist.
