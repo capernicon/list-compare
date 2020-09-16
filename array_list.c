@@ -10,7 +10,6 @@ struct array_list insert_word_arraylist(struct array_list arr, char* word) {
 	struct word w;
 	struct word tmp;
 	int j;
-	int flag = 0;
 	int iterator;
 	void * new_ptr;
 
@@ -28,8 +27,8 @@ struct array_list insert_word_arraylist(struct array_list arr, char* word) {
           }
         }
 
-	w.len = strlen(word);
 	w.text = strdup(word);
+	w.len = strlen(w.text);
 	w.count = 1;
 
         /* check if word duplicte */

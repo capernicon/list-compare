@@ -1,4 +1,5 @@
 #include "shared.h"
+#include "helpers.h"
 #include <stdio.h>
 #ifndef ARRAY_LIST
 #define ARRAY_LIST
