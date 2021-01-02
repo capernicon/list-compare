@@ -18,3 +18,4 @@
 
 <h4>run</h4>
 <code>./list_compare infile outfile datastructure</code>
+<code>EX ./list_compare /testfiles/big.txt newfile linkedlist</code>
